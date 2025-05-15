@@ -108,6 +108,7 @@ The app was converted to an APK for Android use via web2apk or PWA wrapping.
 ## 🛠 Setup and Run Locally
 
 ### 1. Clone this Repository
+
 git clone https://github.com/vaishnavi1728/Alzheimers_Detection.git
 cd alzheimers-detection
 
