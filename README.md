@@ -72,7 +72,7 @@ The goal is to classify MRI brain scans into Alzheimer's-affected or normal cate
 ### Classification Report
 ![Report](images/ClassificationReport.jpeg)
 ### Confusion Matrix
-![Confusion Matrix](Confusion Matrix)
+![Report](images/ConfusionMatrix.jpeg)
 ---
 
 ## 🌐 Web App Overview
