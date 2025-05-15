@@ -108,14 +108,13 @@ The app was converted to an APK for Android use via web2apk or PWA wrapping.
 ## 🛠 Setup and Run Locally
 
 ### 1. Clone this Repository
-```bash
-git clone https://github.com/your-username/alzheimers-detection.git
+git clone https://github.com/vaishnavi1728/Alzheimers_Detection.git
 cd alzheimers-detection
 
 ### 2. Install Dependencies
-```bash
 pip install -r requirements.txt
 
 ### 3. Run FastAPI App
 ```bash
 uvicorn app:app --reload
+
