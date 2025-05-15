@@ -1,6 +1,7 @@
 # Alzheimers_Detection
 here is the video link
-
+https://github.com/user-attachments/assets/5f9fce54-aeb5-4c60-8fb4-3ee91b2d15ff
+  
 # 🧠 Alzheimer's Disease Detection using VGG16 + SVM
 
 This project involves building a machine learning pipeline to detect Alzheimer's Disease from brain MRI images. It combines transfer learning using *VGG16* for feature extraction and a *Support Vector Machine (SVM)* for classification. The system is deployed as a web app using *FastAPI* and hosted on *Hugging Face Spaces*, with an Android APK provided for mobile use.
@@ -92,7 +93,7 @@ The goal is to classify MRI brain scans into Alzheimer's-affected or normal cate
 
 App is live and hosted using [Hugging Face Spaces](https://huggingface.co/spaces) using Docker backend.
 
-✅ *Try the app online*: [App Link Here]
+✅ *Try the app online*: [https://vaishnavitammana20-az-detection.hf.space]
 
 ---
 
@@ -100,7 +101,7 @@ App is live and hosted using [Hugging Face Spaces](https://huggingface.co/spaces
 
 The app was converted to an APK for Android use via web2apk or PWA wrapping.
 
-📲 *Download APK*: [APK Link Here]
+📲 *Download APK*: [https://old.my.mobiroller.com/downloadAPK/?apk=3466797039216.apk]
 
 ---
 
@@ -110,3 +111,11 @@ The app was converted to an APK for Android use via web2apk or PWA wrapping.
 ```bash
 git clone https://github.com/your-username/alzheimers-detection.git
 cd alzheimers-detection
+
+### 2. Install Dependencies
+```bash
+pip install -r requirements.txt
+
+### 3. Run FastAPI App
+```bash
+uvicorn app:app --reload
