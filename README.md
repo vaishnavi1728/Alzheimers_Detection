@@ -82,7 +82,7 @@ The goal is to classify MRI brain scans into Alzheimer's-affected or normal cate
 - Upload MRI scan images (JPG/PNG).
 - Real-time prediction of Alzheimer's status.
 - Clean, simple web interface.
-- 
+  
 ![Report](images/AppInterface_prediction.jpeg)
 ### Routes:
 - GET / – Home page
