@@ -71,7 +71,8 @@ The goal is to classify MRI brain scans into Alzheimer's-affected or normal cate
 | Input Image Size| 176 x 208 |
 ### Classification Report
 ![Report](images/ClassificationReport.jpeg)
-
+### Confusion Matrix
+![Confusion Matrix](Confusion Matrix)
 ---
 
 ## 🌐 Web App Overview
