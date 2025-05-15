@@ -69,6 +69,8 @@ The goal is to classify MRI brain scans into Alzheimer's-affected or normal cate
 | Test Accuracy   | 96.05%    |
 | Model Type      | VGG16 + SVM |
 | Input Image Size| 176 x 208 |
+### Classification Report
+![Report](images/ClassificationReport.jpeg)
 
 ---
 
