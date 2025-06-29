@@ -1,4 +1,4 @@
-# Alzheimers_Detection
+# Android-Based Multi-Stage Classification of Alzheimer's Disease Using a Hybrid Framework
   
 # 🧠 Hybrid framework for alzheimer’s disease classification
 
