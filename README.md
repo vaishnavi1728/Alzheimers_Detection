@@ -1,6 +1,4 @@
 # Alzheimers_Detection
-here is the video link
-https://github.com/user-attachments/assets/5f9fce54-aeb5-4c60-8fb4-3ee91b2d15ff
   
 # 🧠 Alzheimer's Disease Detection using VGG16 + SVM
 
