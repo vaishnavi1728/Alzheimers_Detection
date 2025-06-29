@@ -1,8 +1,8 @@
 # Alzheimers_Detection
   
-# 🧠 Alzheimer's Disease Detection using VGG16 + SVM
+# 🧠 Hybrid framework for alzheimer’s disease classification
 
-This project involves building a machine learning pipeline to detect Alzheimer's Disease from brain MRI images. It combines transfer learning using *VGG16* for feature extraction and a *Support Vector Machine (SVM)* for classification. The system is deployed as a web app using *FastAPI* and hosted on *Hugging Face Spaces*, with an Android APK provided for mobile use.
+This project involves a comparative analysis of a hybrid framework for Alzheimer’s Disease classification using brain MRI images. It extracts deep features from five pre-trained models—VGG16, DenseNet169, ResNet50, MobileNetV2, and Vision Transformer (ViT)—which are then concatenated and passed to a multi-class Support Vector Machine (SVM) classifier for final prediction. The system is deployed as a web app using *FastAPI* and hosted on *Hugging Face Spaces*, with an Android APK provided for mobile use.
 
 ---
 
@@ -20,9 +20,9 @@ This project involves building a machine learning pipeline to detect Alzheimer's
 
 ## 📌 Project Overview
 
-The goal is to classify MRI brain scans into Alzheimer's-affected or normal categories using a hybrid deep learning + classical ML approach:
+The goal is to classify MRI brain scans into four categories using a hybrid deep learning + classical ML approach:
 - Convert grayscale MRI scans to RGB.
-- Use *VGG16* (pretrained on ImageNet) to extract deep features.
+- Use *VGG16/ DenseNet169/ ResNet50/ MobileNetV2/ Vision Transformer* to extract deep features.
 - Train a *Linear SVM* on these features for final classification.
 - Build a *FastAPI* app for real-time predictions.
 - Deploy the app on Hugging Face Spaces with support for web and Android APK access.
@@ -44,30 +44,56 @@ The goal is to classify MRI brain scans into Alzheimer's-affected or normal cate
 
 ## 🔧 Model Architecture
 
-### Feature Extractor: VGG16 (Transfer Learning)
+### Feature Extractor: (Transfer Learning)
 
+*VGG16
 - Base model: VGG16(weights='imagenet', include_top=False, pooling='avg')
 - Input size: (176, 208, 3)
+- Grayscale to RGB conversion
+- Feature extraction via base_model.predict(preprocess_input(images))
+
+*ResNet-50
+- Base model: 
+- Input size: 
+- Grayscale to RGB conversion
+- Feature extraction via base_model.predict(preprocess_input(images))
+
+*MobileNetV2
+- Base model:
+- Input size: 
+- Grayscale to RGB conversion
+- Feature extraction via base_model.predict(preprocess_input(images))
+
+*DenseNet-169 
+- Base model:
+- Input size: 
+- Grayscale to RGB conversion
+- Feature extraction via base_model.predict(preprocess_input(images))
+
+*Vision Tranformer(ViT)
+- Base model:
+- Input size: 
 - Grayscale to RGB conversion
 - Feature extraction via base_model.predict(preprocess_input(images))
 
 ### Classifier: Support Vector Machine (SVM)
 
 - Kernel: Linear
-- Accuracy:
-  - ✅ *Validation Accuracy:* 95.98%
-  - ✅ *Test Accuracy:* 96.05%
-
+- The regularization parameter was set to C = 1.0.
+  
 ---
 
 ## 📊 Performance
 
+Byb comparing the results the analysis suggests that ResNet50 + SVM and DenseNet169 + SVM are optimal choices for high-accuracy medical diagnostics, while MobileNetV2 + SVM serves well in scenarios demanding a lighter model footprint.
+
+Results for best model
 | Metric          | Value     |
 |-----------------|-----------|
-| Validation Acc  | 95.98%    |
-| Test Accuracy   | 96.05%    |
-| Model Type      | VGG16 + SVM |
-| Input Image Size| 176 x 208 |
+| Validation Acc  | 99.28%    |
+| Test Accuracy   | 99.53%    |
+| Model Type      | ResNet-50 + SVM |
+
 ### Classification Report
 ![Report](images/ClassificationReport.jpeg)
 ### Confusion Matrix
@@ -92,7 +118,7 @@ The goal is to classify MRI brain scans into Alzheimer's-affected or normal cate
 
 App is live and hosted using [Hugging Face Spaces](https://huggingface.co/spaces) using Docker backend.
 
-✅ *Try the app online*: [https://vaishnavitammana20-az-detection.hf.space]
+✅ *Try the app online*: [https://huggingface.co/spaces/VaishnaviTammana20/ad_detection]
 
 ---
 
